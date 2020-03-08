@@ -1,0 +1,27 @@
+ .dom {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    min-height: 100vh;
+    background: #f1f1f1;
+    color: rgb(225, 250, 228);
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    background: #dc5b39;
+    margin: 0 auto;
+    transform: translateY(300px);
+    transition: 0.3s cubic-bezier(0.56, 0.2, 0.46, 1.27) all;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 20px 10px;
+    background: #049ad7;
+    color: rgb(225, 244, 252);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+  }

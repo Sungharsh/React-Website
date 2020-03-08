@@ -1,0 +1,15 @@
+.App {
+  margin: 15px 1px 1px 1px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2px 2px 0px;
+}
+
+.main-container{
+  border: 1px solid #b8b8b8;
+  padding: 15px 5px 0px 5px;
+  min-height: 500px;
+  max-width:99%;
+  width: 99%;
+  margin: 9vh auto;
+}

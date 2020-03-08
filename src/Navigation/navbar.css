@@ -1,0 +1,35 @@
+/*NAV BAR*/
+.navStyle{
+  margin: 5px;
+  background-color: #282c34;
+  color: white !important;
+}
+nav{
+  margin: 2px 4px;
+}
+.btn{
+margin-left: 5px;
+width:8%;
+}
+
+/*React Animation*/
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .App-logo{
+    width: 30px ;
+    height: 30px;
+  }
+.navbar-brand{
+  margin-top: -6px;
+}

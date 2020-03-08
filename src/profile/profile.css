@@ -1,0 +1,37 @@
+.icon {
+    color: #009c84;
+  }
+
+.title{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 29px !important;
+    letter-spacing: 2.8px;
+    word-spacing: 0px;
+    color: #000000 !important;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    padding-bottom:20px;
+}
+  .user-details{
+    text-align: 1eft;
+  }
+
+/* .image.is-1by1, .image.is-square {
+    padding-top: 2%;
+} */
+.image{
+    width:80%;
+    height: 80%;
+}
+.sectionTwo{
+  /* border: 1px solid #b8b8b8; */
+  padding: 15px 50px;
+  margin-right: 12%;
+  /* min-height: 450px;
+  max-width:99%;
+  width: 99%;
+  margin: 9vh auto; */
+}
