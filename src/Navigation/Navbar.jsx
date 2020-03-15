@@ -7,9 +7,9 @@ import './navbar.css';
 const Navbar = () => {
     const url = 'to be declared';
     return ( 
-        <nav className="navbar is-fixed-top button has-background-light" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-fixed-top customNav has-background-light" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
+            <a className="navbar-item" href="https://sungharsh.github.io/" target="_blank" rel="noopener noreferrer">
             <img src={logo} className="App-logo" alt="logo" />
             </a>
 
@@ -22,7 +22,7 @@ const Navbar = () => {
 
           <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
-              <NavLink className="navbar-item" to="/Profile">Profile</NavLink>  
+              <NavLink className="navbar-item" to="/Profile">Profile</NavLink>
               <NavLink className="navbar-item" to="/DisplayAPI">DisplayAPI</NavLink>
           
               <div className="navbar-item has-dropdown is-hoverable">
@@ -49,14 +49,14 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <div className="buttons">
-                  <a href={url} className="button is-light">
-                    Sign up
+              
+                  <a href={url} className="is-light">
+                    Sign up &nbsp;&nbsp;&nbsp;&nbsp;
                   </a>
-                  <a href={url} className="button is-light">
+                  <a href={url} className="is-light">
                     Log in
                   </a>
-                </div>
+                
               </div>
             </div>
           </div>

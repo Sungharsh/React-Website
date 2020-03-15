@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+import React, {lazy, Suspense,} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCoffee, faLaptopCode, faTerminal, faCode, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import {faGithubSquare} from "@fortawesome/free-brands-svg-icons";
 import './profile.css';
+
+const ShowAvator = lazy(() => import( "./Avatar" ) );
+
 
 const userData = {
     name: 'Sungharsh on code',
@@ -10,13 +13,12 @@ const userData = {
     foodType: ' Vegan',
     likes: ' Coding into the wee hours of the evening',
     github: 'Sungharsh',
-    avatar: 'https://avatars1.githubusercontent.com/u/11149124?v=4',
+    //avatar: 'https://avatars1.githubusercontent.com/u/11149124?v=4',
     Quote: ' “Anything is possible when you have inner peace”',
     email: ' webfabricsuk@gmail.com'
 }
-class Profile extends Component {
-    render() { 
-        const url = `https://github.com/${userData.github}`;
+
+const Profile = () => {
         return ( 
            <div className="columns level">
 
@@ -25,11 +27,11 @@ class Profile extends Component {
                 <FontAwesomeIcon icon={faTerminal} size={"2x"} className="icon"/>
                    Pro-Dev
               </strong></p>
-              <p>
-                <img className="image" src={userData.avatar} alt={userData.name}/>
-              </p>
+              <br />
+              <Suspense fallback={<h1>...Loding</h1>} >
+                <ShowAvator />
+              </Suspense>
             </div>
-
             <div className="column is-three-quarters-mobile is-two-thirds-tablet is-three-quarters-desktop is-one-third-widescreen is-one-quarter-fullhd">
                 <div className="user-details media-content sectionTwo">
                 <h3 className="title">{userData.name}</h3>
@@ -55,19 +57,20 @@ class Profile extends Component {
                 </p>
 
                 <p className="subtitle">
-                <FontAwesomeIcon icon={faMailBulk} size={"2x"}  className="icon" />
+                &nbsp;<FontAwesomeIcon icon={faMailBulk} size={"2x"}  className="icon" />
                     {userData.email}
                 </p>
 
-                <p><a href={url} target="_blank" rel="noopener noreferrer" className="github-box is-link">&nbsp;&nbsp;
-                    <FontAwesomeIcon icon={faGithubSquare} size={"2x"}  className="icon link" />&nbsp;&nbsp;&nbsp;&nbsp;
-                    {userData.github}
-                </a></p>
+                <p>
+                <a className="github-box is-link" href="https://sungharsh.github.io/"  target="_blank" rel="noopener noreferrer">
+                &nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon={faGithubSquare} size={"2x"}  className="icon link" />&nbsp;&nbsp;&nbsp;&nbsp;     
+                {"Visit my Profile: " + userData.github}
+                </a>
+                </p>
 
                 </div>
             </div>
           </div>
          );
-    }
 }
 export default Profile;

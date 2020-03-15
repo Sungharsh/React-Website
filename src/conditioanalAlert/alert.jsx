@@ -9,9 +9,10 @@ const Alert = () => {
     return ( 
         <div className="column">
         <br/>
-        <h className="is-size-4">Enter the Secrate phrase sunny to see the alert</h> 
+        <h2 className="is-size-4">Enter the Secrate phrase sunny to see the alert</h2> 
         <br/>
         <input type="text" placeholder="Enter Message" value={phrase} onChange={e => setPhrase(e.target.value)} />
+        <br /><br /><br /><br />
         </div>
      );
 }

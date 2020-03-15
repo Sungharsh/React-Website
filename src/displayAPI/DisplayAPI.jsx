@@ -20,19 +20,19 @@ const DisplayAPI = () => {
         <p>Click button below to fetch a list of Books from an API and display below</p>
         
         <button className="button is-primary is-light is-outlined is-rounded btn" onClick={getBooks}>GetData</button>
-
+        <br /><br /><br /><br />
         {books && books.map((book, index) => {
              const authors = book.authors.join(', ');
              const cleanDate = new Date(book.released).toDateString();
 
             return( //explict return
             <div className="book" key={index}>
-            <h>{book.name}</h>
+            <h3>{book.name}</h3>
             <div className="details" >
-                <p>👨: {book.authors} </p>
-                <p>📖: {book.numberOfPages}</p>
-                <p>🏘️: {authors}</p>
-                <p>⏰: {cleanDate} </p>
+                <p><span role="img" aria-label="author icon">👨</span>: {book.authors} </p>
+                <p><span role="img" aria-label="pages icon">📖</span>: {book.numberOfPages}</p>
+                <p><span role="img" aria-label="location icon">🏘️</span>: {authors}</p>
+                <p><span role="img" aria-label="date icon">⏰</span>: {cleanDate} </p>
             </div>
 
             </div>

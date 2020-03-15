@@ -1,6 +1,13 @@
 .footer{
   background-color: #e0e0e0;
-  
+
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red;
+  color: white;
+  text-align: center; */
 }
 /* SOCIAL STUFF */
 .social-container {

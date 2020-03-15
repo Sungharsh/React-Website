@@ -12,7 +12,7 @@ import GetReusable from './reuseCom/GetReusable';
 import Footer from './footer/Footer';
 import './App.css';
 
-// Global import if icons are used in many component in project
+// Global import if icons are used in many compon1ent in project
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 // import {

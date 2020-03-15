@@ -13,7 +13,7 @@ const Add = () => {
     return ( 
         <div className="column">
         <br/>
-        <h className="is-size-4">Enter numbers click to add</h>
+        <h2 className="is-size-4">Enter numbers click to add</h2>
         <br/>
         <input type="number" placeholder="0" value={firstValue} onChange={e => setFirst(e.target.value) } />
         <input type="number" placeholder="0" value={secondValue} onChange={e =>setSecond(e.target.value) }  />

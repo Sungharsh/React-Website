@@ -1,15 +1,33 @@
 /*NAV BAR*/
-.navStyle{
-  margin: 5px;
-  background-color: #282c34;
-  color: white !important;
-}
 nav{
   margin: 2px 4px;
 }
-.btn{
-margin-left: 5px;
-width:8%;
+.customNav{
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  color: #363636;
+  justify-content: center;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-top: calc(.175em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  line-height: 1.5;
+  vertical-align: top;
+}
+.navbar-item{
+  margin-bottom: 5px;
+  color: #3273dc;
+}
+.navbar-item a{
+  color: #3273dc;
+}
+.navbar-item img{
+  margin-top:10px;
 }
 
 /*React Animation*/
